@@ -103,6 +103,7 @@ button {
     /* border: solid #e5e5e5 1px; */
     border: none;
     background-color: var(--tg-theme-secondary-bg-color);
+    cursor: pointer;
 }
 
 .image {
