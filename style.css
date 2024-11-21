@@ -47,7 +47,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     border-radius: .5em;
     padding: .5em 1em;
     width: 100%;
-    border: solid #e5e5e5 1px;
     cursor: pointer;
     transition: transform .5s ease;
 }
@@ -101,7 +100,7 @@ a {
 button {
     padding: .5em 1em;
     border-radius: 6px;
-    border: solid #e5e5e5 1px;
+    /* border: solid #e5e5e5 1px; */
     background-color: var(--tg-theme-secondary-bg-color);
 }
 
