@@ -101,6 +101,7 @@ button {
     padding: .5em 1em;
     border-radius: 6px;
     /* border: solid #e5e5e5 1px; */
+    border: none;
     background-color: var(--tg-theme-secondary-bg-color);
 }
 
