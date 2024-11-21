@@ -13,7 +13,7 @@ html, body {
 
 body {
     margin: 0 0 0 0;
-    background-color: #F2F2F2;
+    background-color: var(--tg-theme-bg-color);
 }
 
 h1, h2, h3, h4, h5, h6, p, a, li {
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     display: flex;
     align-items: center;
     column-gap: 1em;
-    background-color: white;
+    background-color: var(--tg-theme-secondary-bg-color);
     border-radius: .5em;
     padding: .5em 1em;
     width: 100%;
@@ -102,7 +102,7 @@ button {
     padding: .5em 1em;
     border-radius: 6px;
     border: solid #e5e5e5 1px;
-    background-color: white;
+    background-color: var(--tg-theme-secondary-bg-color);
 }
 
 .image {
