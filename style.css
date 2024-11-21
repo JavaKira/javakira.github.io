@@ -16,7 +16,7 @@ body {
     background-color: #F2F2F2;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, a {
     font-family: 'Roboto', sans-serif;
     color: var(--tg-theme-text-color);
     margin: 0 0 0 0;
@@ -62,4 +62,14 @@ h1, h2, h3, h4, h5, h6, p {
 .catalog-img {
     width: 48px;
     height: 48px;
+}
+
+.crumbs-flex {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+
+a {
+    text-decoration: none;
 }
