@@ -16,7 +16,7 @@ body {
     background-color: var(--tg-theme-bg-color);
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li {
+h1, h2, h3, h4, h5, h6, p, a, li, button {
     font-family: 'Roboto', sans-serif;
     color: var(--tg-theme-text-color);
     margin: 0 0 0 0;
