@@ -1,7 +1,6 @@
-let tg = window.Telegram.WebApp;
-var BackButton = tg.BackButton;
+var BackButton = window.Telegram.WebApp.BackButton;
 BackButton.show();
-Telegram.WebApp.onEvent('backButtonClicked', () => {
-    WebApp.showAlert("Нет пути назад!");
+window.Telegram.WebApp.onEvent('backButtonClicked', () => {
+    window.Telegram.WebApp.showAlert("Нет пути назад!");
     BackButton.hide();
 })
