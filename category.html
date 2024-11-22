@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trutruvle</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="/background.js"></script>
+    <script src="/back.js"></script>
+    <script src="/category.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="crumbs-flex" id="breadcrumbs">
+            <!-- Хлебные крошки -->
+            <a href="/">Главная</a>
+            <p><b>/</b></p>
+            <p><b id="category-name">Категория</b></p>
+        </div>
+        <h1 id="category-title">Категория</h1>
+        <div class="catalog" id="catalog">
+            <!-- Артикулы будут загружены сюда -->
+        </div>
+
+        <div class="feedback">
+            <h2>Есть вопросы?</h2>
+            <button onclick="window.open('https://t.me/q1wi01', '_blank')">Связаться с нами</button>
+        </div>
+    </div>
+</body>
+</html>

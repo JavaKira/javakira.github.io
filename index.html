@@ -7,31 +7,12 @@
     <link rel="stylesheet" href="/style.css">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="/background.js"></script>
+    <script src="/index.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Каталог</h1>
-        <div class="catalog">
-            <div class="catalog-item" onclick="location.href='/eat.html'">
-                <img class="catalog-img" src="/img/icon-eat.svg" alt="">
-                <p>Вкусная еда</p>
-            </div>
-            <div class="catalog-item" onclick="location.href='/rent.html'">
-                <img class="catalog-img" src="/img/icon-rent.svg" alt=""> 
-                <p>Аренда жилья</p>
-            </div>
-            <div class="catalog-item" onclick="location.href='/horses.html'">
-                <img class="catalog-img" src="/img/icon-horse.svg" alt="">
-                <p>Конные прогулки</p>
-            </div>
-            <div class="catalog-item" onclick="location.href='/transfers.html'">
-                <img class="catalog-img" src="/img/icon-transfer.svg" alt="">
-                <p>Трансферы</p>
-            </div>
-            <div class="catalog-item" onclick="location.href='/turroutes.html'">
-                <img class="catalog-img" src="/img/icon-routes.svg" alt="">
-                <p>Туристические маршруты</p>
-            </div>
+        <div class="catalog" id="catalog">
         </div>
 
         <div class="feedback">
