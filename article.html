@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/back.js"></script>
+    <script src="/article.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="crumbs-flex" id="breadcrumbs">
+            <!-- Хлебные крошки -->
+            <a href="/">Главная</a>
+            <p>/</p>
+            <a href="#" id="category-link">Категория</a>
+            <p><b>/</b></p>
+            <p><b id="article-title">Название</b></p>
+        </div>
+
+        <h1 id="article-name">Название</h1>
+        <img id="article-image" class="image" src="/img/default-image.jpg" alt="Изображение статьи">
+        <div id="article-content">
+            <!-- Контент статьи -->
+            <p>Описание отсутствует.</p>
+        </div>
+
+        <div class="feedback">
+            <h2>Есть вопросы?</h2>
+            <button onclick="window.open('https://t.me/q1wi01', '_blank')">Связаться с нами</button>
+        </div>
+    </div>
+</body>
+</html>

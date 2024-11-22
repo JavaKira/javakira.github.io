@@ -33,6 +33,7 @@ async function loadArticlesByCategory(categoryName) {
         articles.forEach(article => {
             const catalogItem = document.createElement('div');
             catalogItem.className = 'catalog-item-column';
+            catalogItem.onclick = () => location.href = `/article.html?id=${article.id}`;
 
             const catalogImg = document.createElement('img');
             catalogImg.className = 'catalog-home-img';
@@ -46,7 +47,7 @@ async function loadArticlesByCategory(categoryName) {
             catalogTitle.textContent = article.title || 'Без названия';
 
             const catalogDescription = document.createElement('p');
-            catalogDescription.textContent = article.shortDescription || 'Описание отсутствует';
+            catalogDescription.textContent = article.shortContent || 'Описание отсутствует';
 
             catalogContainer.appendChild(catalogTitle);
             catalogContainer.appendChild(catalogDescription);
