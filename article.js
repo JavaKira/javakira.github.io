@@ -24,8 +24,8 @@ async function loadArticle(articleId) {
         const categoryLink = document.getElementById('category-link');
         const articleTitle = document.getElementById('article-title');
         categoryLink.href = `/category.html?name=${encodeURIComponent(article.categoryName)}`;
-        categoryLink.textContent = article.articleCategory || 'Категория';
         articleTitle.textContent = article.title;
+        updateCategoryInfo(article.categoryName)
 
         // Обновляем заголовок и изображение
         const articleName = document.getElementById('article-name');
@@ -48,6 +48,24 @@ async function loadArticle(articleId) {
         const articleContent = document.getElementById('article-content');
         articleContent.innerHTML = '<p>Ошибка загрузки данных. Попробуйте позже.</p>';
     }
+}
+
+// Функция для обновления названия категории на странице
+async function updateCategoryInfo(categoryName) {
+    // URL API
+    const apiUrl = `https://vcodetsev.ru:447/api/category?name=${encodeURIComponent(categoryName)}`;
+        
+    // Запрос к API
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+        throw new Error(`Ошибка: ${response.status}`);
+    }
+
+    // Парсим ответ
+    const category = await response.json();
+
+    const categoryLink = document.getElementById('category-link');
+    categoryLink.textContent = category.title || 'Категория';
 }
 
 // Основной запуск
