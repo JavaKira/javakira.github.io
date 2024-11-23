@@ -39,7 +39,7 @@ async function loadArticle(articleId) {
         articleContent.innerHTML = `
             <p>${article.content || 'Описание отсутствует.'}</p>
             <ul>
-                <li>✔️ Контакт в Telegram: <a href="https://t.me/${article.telegramContact}" target="_blank">${article.telegramContact}</a></li>
+                <li>✔️ Контакт в Telegram: <a href="https://t.me/${article.authorTelegram}" target="_blank">${article.authorTelegram}</a></li>
             </ul>
         `;
     } catch (error) {
